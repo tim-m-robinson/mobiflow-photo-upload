@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <script type="text/javascript">
+        function submit() {
+            //req = new XMLHttpRequest();
+            //req.overrideMimeType("mutipart/form-data");
+            alert("foo");
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <form action="/jaxrs/uploadimage" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>
+            <label for="case_ref">Case Reference :</label>
+            <input id="case_ref" name="case_ref" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="customer_name">Customer Name:</label>
+            <input id="customer_name" name="customer_name" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="employee_name">Employee Name:</label>
+            <input id="employee_name" name="employee_name" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <label for="document_image">Document Image</label>
+            <input id="document_image" name="document_image" type="file" accept="image/jpeg,image/tiff">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input id="submit" type="submit" value="Submit!">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
